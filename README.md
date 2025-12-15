@@ -116,12 +116,12 @@ New entries automatically appear in the GUI on next launch.
 Nuitka-Python-Builder/
 │
 ├── assets/
-│   ├── windowsicon.ico              # Default application icon
-│   └── nuitka_options.json          # Configuration database
+│ ├── windowsicon.ico # Default application icon
+│ └── nuitka_options.json # Configuration database
 │
-├── nuitka_python_builder_v2.0.py    # Main Application
-├── requirements.txt                 # Dependencies (nuitka, zstandard, ordered-set)
-└── README.md                        # Documentation
+├── nuitka_python_builder_v2.0.py # Main application
+├── requirements.txt # Dependencies (nuitka, zstandard, ordered-set)
+└── README.md # Documentation
 
 ## Disclaimer
 
@@ -133,12 +133,26 @@ Contributions welcome! Submit issues or pull requests for bug fixes, improvement
 
 ## Troubleshooting
 
-Q: The build fails with "Access Denied".
-A: If your Python is installed in C:\Program Files, you may need permission to install Nuitka. Right-click nuitka_python_builder_v2.0.py (or your terminal) and select Run as Administrator.
-Q: My EXE closes immediately after opening.
-A: This usually means there is a runtime error in your script (missing file or library). Re-build with "Disable Console" UNCHECKED. Run the EXE again, and the console window will stay open, allowing you to read the Python error traceback.
-Q: Nuitka complains about missing C Compiler.
-A: Nuitka requires a C compiler. When you run the build for the first time, allow Nuitka to automatically download and install MinGW64 (The tool passes --assume-yes-for-downloads to handle this automatically).
+**Q: The build fails with "Access Denied".**  
+**A:** If your Python is installed in `C:\Program Files`, you may need permission to install Nuitka.  
+Right-click `nuitka_python_builder_v2.1.py` (or your terminal) and select **Run as Administrator**.
+
+---
+
+**Q: My EXE closes immediately after opening.**  
+**A:** This usually indicates a runtime error in your script (missing file or library).  
+Re-build with **Disable Console** unchecked, then run the EXE again.  
+The console window will stay open and display the Python traceback.
+
+---
+
+**Q: Nuitka complains about a missing C compiler.**  
+**A:** Nuitka requires a C compiler to build native code.  
+For Python ≤3.12, Nuitka can automatically download **MinGW64** when allowed  
+(the tool passes `--assume-yes-for-downloads` to handle this automatically).  
+
+For Python 3.13+, **Visual Studio Build Tools (MSVC)** is required.
+
 
 ## Contact / Support
 
