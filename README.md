@@ -157,6 +157,7 @@ For Python 3.13+, **Visual Studio Build Tools (MSVC)** is required.
 ## Contact / Support
 
 GitHub: https://github.com/e6pure
+Email: e6pure42@gmail.com
 
 ## License
 
