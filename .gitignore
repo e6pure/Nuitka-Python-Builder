@@ -1,0 +1,22 @@
+# Python stuff
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Nuitka build folders
+*.build/
+*.dist/
+*.onefile-build/
+
+# Executables
+*.exe
+*.bin
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# User specific configs (Optional)
+# assets/nuitka_options.json 

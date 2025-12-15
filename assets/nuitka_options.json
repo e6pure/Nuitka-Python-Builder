@@ -1,0 +1,103 @@
+{
+  "tabs": [
+    {
+      "name": "General & Compiler",
+      "groups": [
+        {
+          "name": "Distribution Mode",
+          "options": [
+            { "label": "Standalone (Folder Distribution)", "flag": "--standalone", "default": true },
+            { "label": "One‑File (Single .exe)", "flag": "--onefile", "default": true }
+          ]
+        },
+        {
+          "name": "Compiler Selection",
+          "options": [
+            { "label": "Force MinGW64 (GCC)", "flag": "--mingw64", "default": false },
+            { "label": "Force MSVC (Visual Studio Compiler)", "flag": "--msvc=latest", "default": true },
+            { "label": "Force Clang (clang‑cl/MSVC interface)", "flag": "--clang", "default": false }
+          ]
+        },
+        {
+          "name": "Windows Specific",
+          "options": [
+            { "label": "Disable Console (Windowed Mode)", "flag": "--windows-console-mode=disable", "default": true },
+            { "label": "Attach to Existing Console", "flag": "--windows-console-mode=attach", "default": false },
+            { "label": "Show Console (Force)", "flag": "--windows-console-mode=force", "default": false },
+            { "label": "Request Admin (UAC)", "flag": "--windows-uac-admin", "default": false },
+            { "label": "Request UIAccess (Remote Desktop)", "flag": "--windows-uac-uiaccess", "default": false }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plugins & Packages",
+      "groups": [
+        {
+          "name": "Standard Plugins",
+          "options": [
+            { "label": "Tkinter (GUI)", "flag": "--enable-plugin=tk-inter", "default": true },
+            { "label": "NumPy Support", "flag": "--enable-plugin=numpy", "default": false },
+            { "label": "Multiprocessing Support", "flag": "--enable-plugin=multiprocessing", "default": false },
+            { "label": "Qt6 (PySide6)", "flag": "--enable-plugin=pyside6", "default": false },
+            { "label": "Qt6 (PyQt6)", "flag": "--enable-plugin=pyqt6", "default": false },
+            { "label": "Qt5 (PySide2)", "flag": "--enable-plugin=pyside2", "default": false },
+            { "label": "Qt5 (PyQt5)", "flag": "--enable-plugin=pyqt5", "default": false }
+          ]
+        },
+        {
+          "name": "Advanced Plugins",
+          "options": [
+            { "label": "Follow Imports", "flag": "--follow-imports", "default": false },
+            { "label": "Include Package Data Automatically", "flag": "--include-package-data", "default": false },
+            { "label": "Warn Implicit Exceptions", "flag": "--warn-implicit-exceptions", "default": false },
+            { "label": "Warn Unusual Code", "flag": "--warn-unusual-code", "default": false }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Optimization & Cache",
+      "groups": [
+        {
+          "name": "Build Tuning",
+          "options": [
+            { "label": "Link Time Optimization (LTO)", "flag": "--lto=yes", "default": false },
+            { "label": "Disable Assertions (Production)", "flag": "--python-flag=no_asserts", "default": false },
+            { "label": "No Docstrings (Smaller Size)", "flag": "--python-flag=no_docstrings", "default": false },
+            { "label": "No Annotations", "flag": "--python-flag=no_annotations", "default": false },
+            { "label": "Jobs (Parallel C Compiler)", "flag": "--jobs=auto", "default": false }
+          ]
+        },
+        {
+          "name": "Cache Management",
+          "options": [
+            { "label": "Clean All Cache Before Build", "flag": "--clean-cache=all", "default": false },
+            { "label": "Remove Output Before Build", "flag": "--remove-output", "default": false }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metadata & Reporting",
+      "groups": [
+        {
+          "name": "Binary Info",
+          "options": [
+            { "label": "Product Name", "flag": "--product-name=", "default": false },
+            { "label": "Product Version", "flag": "--product-version=", "default": false },
+            { "label": "File Version", "flag": "--file-version=", "default": false },
+            { "label": "File Description", "flag": "--file-description=", "default": false },
+            { "label": "Copyright Info", "flag": "--copyright=", "default": false }
+          ]
+        },
+        {
+          "name": "Reports",
+          "options": [
+            { "label": "Generate Compilation Report", "flag": "--report=compilation-report.xml", "default": false }
+          ]
+        }
+      ]
+    }
+  ]
+}
